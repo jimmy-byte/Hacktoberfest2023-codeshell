@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html{
+     font-size: 62.5%; 
+}  */
+
+/* Header styling */
+.header{
+    background-color: rgb(104, 51, 20);
+    display: flex;
+    color: white;
+    padding: 50px;
+    height: 10vh;
+}
+
+/* Navbar styling */
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    justify-items: center;
+}
+
+/* Cart-item Styling */
+.cart-items-container{
+    display: flex;
+}
+
+.home{
+    display: flex;
+    height: 90vh;
+    margin: auto;
+}
