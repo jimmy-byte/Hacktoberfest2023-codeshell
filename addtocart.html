@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add to cart page</title>
+  
+  </head>
+ <body>
+<h1>ADD TO CART</h1> <br><br>
+   
+<form target="_self" action="https://www.paypal.com/cgi-bin/webscr"
+        method="post">
+    <!-- Identify your business so that you can collect the payments. -->
+    <input type="hidden" name="business" value="kin@kinskards.com">
+
+    <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="add" value="1">
+
+    <!-- Specify details about the item that buyers will purchase. -->
+    <input type="hidden" name="item_name" value="Birthday - Cake and Candle">
+    <input type="hidden" name="amount" value="3.95">
+    <input type="hidden" name="currency_code" value="USD">
+
+    <!-- Display the payment button. -->
+    <input type="image" name="submit"
+        src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+        alt="Add to Cart">
+    <img alt="" width="1" height="1"
+        src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+  </body>
+</html>
