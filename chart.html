@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>My First Chart</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"> </script>
+   </head>
+   <body>
+      <div style="width:400px; height:400px;">
+         <canvas id="chartName"></canvas>
+      </div>
+      <script>
+         let coins = ["Bitcoin", "Ethereum", "Cardano", "Ripple"];
+         let marketCap = [957, 480, 51, 43];
+         let canvas = document.getElementById("chartName");
+         let firstChart = new Chart(canvas, {
+           type: "pie",
+           data: {
+             labels: coins,
+             datasets: [{
+               label: "Coin",
+               data: marketCap,
+               backgroundColor: ["#26b99a", "#9b59b6", "#8abb6f", "#bfd3b7"],
+               borderColor: ["#26b99a", "#9b59b6", "#8abb6f", "#bfd3b7"]
+             }]
+           },
+           options: {
+             plugins: {
+               legend: {
+                 title: {
+                   display: true,
+                   text: "Percentage distributions of the most known coins"
+                 }
+               }
+             }
+           }
+         });
+      </script>
+   </body>
+</html>
